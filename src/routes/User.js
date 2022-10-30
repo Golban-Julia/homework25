@@ -26,7 +26,7 @@ const Users = () => {
             <Link to="/users">Back to Users</Link>
             <h2 className="user_name">{user.firstName} {user.lastName} {user.maidenName}:</h2>
             <div className="user_block">
-                <div className="img_block"> <img src={user.image} /></div>  
+                <div className="img_block"> <img src={user.image} alt="avatar"/></div>  
             
                 <div className="info_block1">
                     <p>Age: {user.age }</p>
