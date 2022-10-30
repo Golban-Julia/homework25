@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:left;
+  gap:80px;
+  font-size: 28px;
+  list-style: none;
+}
+.header{
+  display: flex;
+  justify-content:space-between;
+  border: 2px solid red;
+}
+h1, .home{
+ color: red;
+ font-size: 18px;
+}
+.title_home{
+  max-width: 780px;
+  margin: 50px auto;
+  background-image: linear-gradient(180deg, #2986f1 0%, #7614df 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 110px;
+  line-height: 120px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.active{
+  color:blue;
+  font-weight: bold;
+}
+
+table{
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center ;
+  width: 100%;
+  max-width: 1280px;
+  /* Ширина таблицы */
+  border-collapse: collapse;
+  /* Убираем двойные линии между ячейками */
+  margin: 40px;
+}
+
+
+td,th{
+  padding: 3px;
+  /* Поля вокруг содержимого таблицы */
+  border: 1px solid black;
+  /* Параметры рамки */
+}
+th {
+  font-size: 24px;
+  color: aliceblue;
+  background: #605DEC;
+}
+
+button {
+  display: inline-block;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  background-color: #605DEC;
+  border-radius: 20px;
+  font-size: 26px;
+  border: solid 2px rgb(2, 3, 20);
+  padding: 15px;
+  margin: 0  0 40px 40px;
+}
+
+button:hover {
+  color: solid 2px blue;
+  background-color: rgb(245, 86, 86);
+  border: solid 2px rgb(148, 7, 7);
+}
+
+.user_block{
+  display: flex;
+  align-items: center;
+  background-color: rgb(16, 191, 250);
+  padding: 20px;
+  border: 4px solid rgb(76, 112, 241);
+}
+.img_block, .info_block1, .info_block2{
+  width: calc(100% / 3);
+}
+
+img{
+  width: 500px;
+  height: 500px;
+  margin-bottom: 100px
+}
+.user_name{
+  text-align: center;
+  font-size: 48px;
+  font-style: italic;
+  color: rgb(76, 112, 241);
+  text-decoration: underline;
+}
+p{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px;
+}
