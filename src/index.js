@@ -7,7 +7,7 @@ import Home from './routes/Home';
 import NotFound from './routes/NotFound';
 import Users from './routes/Users';
 import User from './routes/User';
-import Hotels from './routes/Hotels';
+
 
 import './index.css';
 
@@ -28,10 +28,6 @@ const router = createBrowserRouter([
       },
       {
       path: "users/:userId",
-      element: <User/>,
-      },
-      {
-      path: "hotels",
       element: <User/>,
       },
     ],
