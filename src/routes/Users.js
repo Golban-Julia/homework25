@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 import { getUsers } from "../api";
 
-
-
 const Users = () => {
     
     const [users, setUsers] = useState([]);
@@ -18,13 +16,10 @@ const Users = () => {
     });
     }, []);
 
-
-    const handleClick = (event, id) => {
-        console.log(event);
-        console.log(id);
+    const handleClick = (id) =>()=> {
+        
         navigate (`/users/${id}`)
     };
-
 
     if (isLoading) {
         return <p>Loading...</p>
@@ -43,18 +38,15 @@ const Users = () => {
             <tbody>
             {users.map((user) => (
                 <tr key={user.id}>
-                    {/* <td><Link to={`${user.id}`}>{user.firstName}</Link></td> */}
                     <td>{user.firstName}</td>
                     <td> {user.lastName} </td>
                     <td><a href="mailto:{user.email}">{user.email}</a></td>
                     <td><a href="tel:{user.phone}">{user.phone}</a></td>
-                    <button type="button" onClick={event => handleClick(event, user.id)}> Show More</button>
-                    
+                    <button type="button" onClick={handleClick(user.id)}> Show More</button>
                 </tr>
             ))}
             </tbody>
         </table>
-            
         </>    
     );
 };
