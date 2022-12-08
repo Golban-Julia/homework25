@@ -12,3 +12,11 @@ export const getUserById = async(id) => {
     return data;
 };
 
+export const login = (credentials) => {
+    return fetch(`${API_URL}/auth/login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(credentials),
+    }).then((res) => res.json());
+};
+
